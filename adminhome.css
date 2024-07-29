@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/Model\ \(2\).jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    vertical-align: middle;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+}
+
+.nav-bar{
+    list-style: none;
+    display: table;
+    text-align: center;
+}
+
+.nav{
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+    font-family: "Arial", sans-serif;
+
+}
+
+.nav-links{
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+
+}
+
+.nav-links::after{
+    content: "";
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: grey;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0%;
+    margin: 4px;
+}
+
+.nav-links:hover::after{
+    width: 100%;
+    left: 0%;
+    background-color: rgb(88, 154, 173);
+}
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 60%;
+    }
+}
+
+/* Media Query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80%;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    text-decoration: underline;
+    color: #000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+button{
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+button:hover{
+    background-color:rgb(88, 154, 173);
+    color: white;
+}
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+    font-size: 24px;
+    width: 100vw;
+    text-align: center;
+}
+tr{
+    text-align: center;
+
+}
+td{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+}
